@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Calculator';
+    src: url('font/Calculator.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #2C5C5A;
+    --cor2: #B0E1E0;
+    --cor3: #485C5B;
+    --cor4: #51A8A5;
+}
+
+.container {
+    background-color: #353535;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: var(--cor3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #0000002c;
+}
+
+.screen {
+    background-color: var(--cor3);
+    color: var(--cor2);
+    box-shadow: inset 2px 2px 2px #00000050;
+    font-family: 'Calculator';
+    font-size: 50px;
+    text-align: right;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 2px 2px 2px #0000002c;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+.operator {
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+.delete {
+    width: 133px;
+}
+
+.equal {
+    width: 133px;
+}
