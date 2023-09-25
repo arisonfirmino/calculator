@@ -1,19 +1,20 @@
 @font-face {
-    font-family: 'Calculator';
-    src: url('font/Calculator.ttf');
+    font-family: "Calculator";
+    src: url("font/Calculator.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 :root {
-    --cor1: #2C5C5A;
-    --cor2: #B0E1E0;
-    --cor3: #485C5B;
-    --cor4: #51A8A5;
+    --cor1: #2c5c5a;
+    --cor2: #b0e1e0;
+    --cor3: #485c5b;
+    --cor4: #51a8a5;
 }
 
 .container {
@@ -29,19 +30,23 @@
     background-color: var(--cor3);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px #0000002c;
+    box-shadow: 2px 2px 2px #0000003a;
 }
 
 .screen {
-    background-color: var(--cor3);
     color: var(--cor2);
-    box-shadow: inset 2px 2px 2px #00000050;
-    font-family: 'Calculator';
-    font-size: 50px;
-    text-align: right;
+    font-family: "Calculator";
     width: 100%;
-    height: 55px;
+    height: 70px;
+    font-size: 35px;
+    box-shadow: inset 2px 2px 5px #0000003a, inset -2px -2px 5px #0000003a;
+    text-align: right;
+    padding: 7px 15px;
     margin-bottom: 15px;
+}
+
+.current {
+    font-size: 30px;
 }
 
 button {
@@ -49,11 +54,9 @@ button {
     color: var(--cor1);
     width: 60px;
     height: 60px;
-    font-size: 18px;
-    border: none;
-    border-radius: 60px;
-    box-shadow: 2px 2px 2px #0000002c;
     margin: 5px;
+    border: none;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -68,9 +71,11 @@ button:hover {
 }
 
 .delete {
-    width: 133px;
+    width: 135px;
+    border-radius: 60px;
 }
 
 .equal {
-    width: 133px;
+    width: 135px;
+    border-radius: 60px;
 }
